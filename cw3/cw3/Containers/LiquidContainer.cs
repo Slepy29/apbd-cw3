@@ -8,7 +8,7 @@ public class LiquidContainer : Container, IHazardNotifier
     {
     }
 
-    public override void Load(int mass)
+    public override void Load(double mass)
     {
         //if(hazard)
         {

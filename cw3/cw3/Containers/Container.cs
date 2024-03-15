@@ -4,7 +4,7 @@ namespace cw3.Containers;
 
 public abstract class Container : IContainer
 {
-    public int Mass { get; set; }
+    public double Mass { get; set; }
     public int Height { get; set; }
     public int Weight { get; set; }
     public int Depth { get; set; }
@@ -25,7 +25,7 @@ public abstract class Container : IContainer
         Mass = 0;
     }
 
-    public virtual void Load(int mass)
+    public virtual void Load(double mass)
     {
         if (Mass + mass > MaxWeight)
             throw new OverflowException("Container will overflow");

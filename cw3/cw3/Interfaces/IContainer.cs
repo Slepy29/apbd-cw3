@@ -3,5 +3,5 @@
 public interface IContainer
 {
     void Unload();
-    void Load(int Mass);
+    void Load(double Mass);
 }
