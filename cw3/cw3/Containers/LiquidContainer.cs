@@ -4,7 +4,7 @@ namespace cw3.Containers;
 
 public class LiquidContainer : Container, IHazardNotifier
 {
-    public LiquidContainer(int height, int weight, int depth, string type, int id, int maxWeight) : base(height, weight, depth, type, id, maxWeight)
+    public LiquidContainer(int height, int weight, int depth, int id, int maxWeight) : base(height, weight, depth, "L", id, maxWeight)
     {
     }
 
